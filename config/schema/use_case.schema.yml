@@ -1,0 +1,18 @@
+helper.use_case.*:
+  type: config_entity
+  label: 'UseCase config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    description:
+      type: text
+      label: 'Description'
+    uuid:
+      type: string
+    tech_recs:
+      type: helper.tech_recs.[id]
+      label: 'Technical Recommendations'

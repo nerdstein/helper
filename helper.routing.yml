@@ -1,0 +1,86 @@
+
+helper.default_controller_hello:
+  path: '/helper/hello/{name}'
+  defaults:
+    _controller: '\Drupal\helper\Controller\DefaultController::hello'
+    _title: 'helper Title'
+  requirements:
+    _permission: 'access content'
+
+
+# UseCase routing definition
+entity.use_case.collection:
+  path: '/admin/config/system/use_case'
+  defaults:
+    _entity_list: 'use_case'
+    _title: 'UseCase Configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.use_case.add_form:
+  path: '/admin/config/system/use_case/add'
+  defaults:
+    _entity_form: 'use_case.add'
+    _title: 'Add UseCase'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.use_case.edit_form:
+  path: '/admin/config/system/use_case/{use_case}'
+  defaults:
+    _entity_form: 'use_case.edit'
+    _title: 'Edit UseCase'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.use_case.delete_form:
+  path: '/admin/config/system/use_case/{use_case}/delete'
+  defaults:
+    _entity_form: 'use_case.delete'
+    _title: 'Delete UseCase'
+  requirements:
+    _permission: 'administer site configuration'
+
+
+# TechRecs routing definition
+entity.tech_recs.collection:
+  path: '/admin/config/system/tech_recs'
+  defaults:
+    _entity_list: 'tech_recs'
+    _title: 'TechRecs Configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.tech_recs.add_form:
+  path: '/admin/config/system/tech_recs/add'
+  defaults:
+    _entity_form: 'tech_recs.add'
+    _title: 'Add TechRecs'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.tech_recs.edit_form:
+  path: '/admin/config/system/tech_recs/{tech_recs}'
+  defaults:
+    _entity_form: 'tech_recs.edit'
+    _title: 'Edit TechRecs'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.tech_recs.delete_form:
+  path: '/admin/config/system/tech_recs/{tech_recs}/delete'
+  defaults:
+    _entity_form: 'tech_recs.delete'
+    _title: 'Delete TechRecs'
+  requirements:
+    _permission: 'administer site configuration'
+
+
+helper.helper_form:
+  path: '/admin/config/helper/helper'
+  defaults:
+    _form: '\Drupal\helper\Form\HelperForm'
+    _title: 'HelperForm'
+  requirements:
+    _permission: 'access administration pages'
+

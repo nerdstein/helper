@@ -1,0 +1,14 @@
+# UseCase menu items definition
+entity.use_case.collection:
+  title: 'UseCase'
+  route_name: entity.use_case.collection
+  description: 'List UseCase'
+  parent: system.admin_structure
+
+# TechRecs menu items definition
+entity.tech_recs.collection:
+  title: 'TechRecs'
+  route_name: entity.tech_recs.collection
+  description: 'List TechRecs'
+  parent: system.admin_structure
+

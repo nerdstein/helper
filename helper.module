@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains helper.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function helper_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the helper module.
+    case 'help.page.helper':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Help SAs and Sales spec out Acquia Security solutions') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function helper_theme() {
+  $theme = [];
+
+  return $theme;
+}

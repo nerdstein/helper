@@ -1,0 +1,12 @@
+entity.use_case.add_form:
+  route_name: 'entity.use_case.add_form'
+  title: 'Add UseCase'
+  appears_on:
+    - entity.use_case.collection
+
+entity.tech_recs.add_form:
+  route_name: 'entity.tech_recs.add_form'
+  title: 'Add TechRecs'
+  appears_on:
+    - entity.tech_recs.collection
+
